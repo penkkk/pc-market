@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Контакты</title>
+</head>
+
+<body>
+    
+    <header>
+        <a href="../index.html">
+            <img src="../assets/icons/monitor-pc.svg" alt="">
+            <h1>PcMarket</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../pages/aboutUs.html">О нас</a>
+                </li>
+                <li>
+                    <a href="../pages/contactInformation.html">Контакты</a>
+                </li>
+                <li>
+                    <a href="../pages/reviews.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Остались вопросы? Мы всегда на связи!</h1>
+        <p>Поможем подобрать комплектующие, проверить совместимость деталей, оформить заказ или рассчитать индивидуальную сборку ПК. Выберите удобный способ связи или приходите в наш шоурум.</p>
+        
+        <section>
+            <h2>Карточки контактов</h2>
+            
+            <h3>Отдел продаж и консультаций</h3>
+            <ul>
+                <li>+7 (800) 555-35-35 (бесплатно по РФ)</li>
+                <li>+7 (495) 123-45-67</li>
+                <li>Режим работы линии: ежедневно с 09:00 до 21:00</li>
+            </ul>
+
+            <h3>Сервисный центр и техподдержка:</h3>
+            <ul>
+                <li>+7 (495) 123-45-68</li>
+                <li>Email: support@pcmarket.ru</li>
+                <li>Режим работы: Пн–Пт с 10:00 до 19:00</li>
+            </ul>
+
+            <h3>Электронная почта</h3>
+            <ul>
+                <li>По общим вопросам и заказам: info@pcmarket.ru</li>
+                <li>Для корпоративных клиентов: b2b@pcmarket.ru</li>
+            </ul>
+
+            <h3>Мессенджеры и соцсети</h3>
+            <ul>
+                <li>Telegram: @pcmarket</li>
+                <li>Vkontakte: @pcmarket</li>
+                <li>WhatsApp: +7 (800) 555-35-35</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Напишите нам сообщения</h2>
+            <p>Заполните поля ниже, и мы свяжемся с вами в течение 30 минут в рабочее время.</p>
+            <form action="#">
+
+                <div>
+                    <label for="user-name">Имя</label>
+                    <input type="text" id="user-name" placeholder="Ваше имя" name="name">
+                </div>
+
+                <div>
+                    <label for="user-contact">Телефон или Email</label>
+                    <input type="text" name="contact" id="user-contact" placeholder="+7 (___) ___-__-__ / example@mail.ru">
+                </div>
+
+                <div>
+                    <label for="selector">Тема обращения</label>
+                    <select name="selector" id="selector">
+                        <option value="pc-build">Консультация по сборке ПК</option>
+                        <option value="order-status">Вопрос по существующему заказу</option>
+                        <option value="warranty">Гарантия и сервис</option>
+                        <option value="b2b">Сотрудничество / Опт</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="user-message">Сообщения</label>
+                    <textarea name="user-message" id="user-message" rows="1" placeholder="Напишите ваш вопрос или прикрепите спецификацию..."></textarea>
+                </div>
+
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/inter-v20-latin-regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/inter-v20-latin-500.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/inter-v20-latin-700.woff2);
+    font-weight: 700;
+}
+
+:root {
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: var(--fw-regular);
+}
