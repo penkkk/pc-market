@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница с услугами предоставляемыми компаниейPcMarket">
     <link rel="stylesheet" href="../css/style.css">
     <title>Услуги</title>
 </head>
@@ -28,7 +29,7 @@
                     <a href="aboutUs.html" class="site-nav__link">О нас</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="reviews.html" class="site-nav__link">Отзыв</a>
+                    <a href="reviews.html" class="site-nav__link">Отзывы</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="contacts.html" class="site-nav__link">Контакты</a>
@@ -38,39 +39,41 @@
     </header>
 
     <main>
-        <section>
-        <h1>Услуги сервисного центра PcMarket</h1>
-        <p>Профессиональное обслуживание, индивидуальная сборка и модернизация компьютерной техники с гарантией.</p>
+        <section class="page-intro">
+            <h1 class="page-intro__title">Услуги сервисного центра PcMarket</h1>
+            <p class="page-intro__description">Профессиональное обслуживание, индивидуальная сборка и модернизация компьютерной техники с гарантией.</p>
         </section>
 
-        <section>
-        <article>
-            <h2>Индивидуальная сборка игровых и рабочих ПК</h2>
-            <p>
-            Полная сборка системного блока под ваши задачи и бюджет. Включает профессиональный кабель-менеджмент, настройку BIOS, установку операционной системы, а также многочасовые стресс-тесты под пиковой нагрузкой для проверки стабильности температур.
-            </p>
-            <p><strong>Срок выполнения:</strong> 1–2 рабочих дня</p>
-            <p><strong>Стоимость:</strong> от 3 500 ₽</p>
-            <a href="./contactInformation.html">Заказать услугу</a>
-        </article>
+        <section class="services">
+            <article class="services-card">
+                <h2 class="services-card__title">Индивидуальная сборка игровых и рабочих ПК</h2>
+                <p class="services-card__description">
+                Полная сборка системного блока под ваши задачи и бюджет. Включает профессиональный кабель-менеджмент, настройку BIOS, установку операционной системы, а также многочасовые стресс-тесты под пиковой нагрузкой для проверки стабильности температур.
+                </p>
+                <p class="services-card__detail"><strong class="services-card__label">Срок выполнения:</strong> 1–2 рабочих дня</p>
+                <p class="services-card__detail"><strong class="services-card__label">Стоимость:</strong> от 3 500 ₽</p>
+                <a href="order.html" class="services-card__link">Заказать услугу</a>
+                <a href="product.html" class="catalog-card__link">Подробнее</a>
+            </article>
 
-        <hr>
+            <hr>
 
-        <article>
-            <h2>Комплексная чистка, диагностика и замена термоинтерфейса</h2>
-            <p>
-            Глубокая очистка компонентов от пыли с полным разбором корпуса, продувкой радиаторов и вентиляторов. Замена термопасты на процессоре и видеокарте, замена термопрокладок на цепях питания и чипах памяти для снижения уровня шума и температур.
-            </p>
-            <p><strong>Срок выполнения:</strong> от 3 часов</p>
-            <p><strong>Стоимость:</strong> от 1 900 ₽</p>
-            <a href="./contactInformation.html">Заказать услугу</a>
-        </article>
+            <article class="services-card">
+                <h2 class="services-card__title">Комплексная чистка, диагностика и замена термоинтерфейса</h2>
+                <p class="services-card__description">
+                Глубокая очистка компонентов от пыли с полным разбором корпуса, продувкой радиаторов и вентиляторов. Замена термопасты на процессоре и видеокарте, замена термопрокладок на цепях питания и чипах памяти для снижения уровня шума и температур.
+                </p>
+                <p class="services-card__detail"><strong class="services-card__label">Срок выполнения:</strong> от 3 часов</p>
+                <p class="services-card__detail"><strong class="services-card__label">Стоимость:</strong> от 1 900 ₽</p>
+                <a href="order.html" class="services-card__link">Заказать услугу</a>
+                <a href="product.html" class="catalog-card__link">Подробнее</a>
+            </article>
         </section>
     </main>
 
-  <footer>
-    <p>&copy; 2026 PcMarket. Все права защищены.</p>
-  </footer>
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
+    </footer>
 
 </body>
 </html>

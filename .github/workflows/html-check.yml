@@ -1,0 +1,22 @@
+name: HTML Checker CI
+
+on:
+  push:
+    branches: [ "dev", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачивание кода репозитория
+        uses: actions/checkout@v4
+
+      - name: Установка Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Проверка HTML-кода (HTMLHint)
+        run: npx htmlhint "**/*.html"

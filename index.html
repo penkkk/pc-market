@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Главная страница магазина PcMarket">
     <link rel="stylesheet" href="./css/style.css">
     <title>PcMarket</title>
 </head>
@@ -78,20 +79,22 @@
             <div class="popular__grid">
                 
                 <article class="product-card">
-                    <img class="product-card__image" src="./img/products/pc-ultra.jpg" alt="Игровой ПК">
+                    <img class="product-card__image" src="./assets/img/gaming-pc.jpg" alt="Игровой ПК">
                     <div class="product-card__content">
                         <h3 class="product-card__title">Игровой ПК PcMarket Ultra</h3>
                         <p class="product-card__price">219 990 ₽</p>
                         <a class="product-card__button button" href="./pages/order.html">Купить</a>
+                        <a href="../pages/product.html" class="catalog-card__link">Подробнее</a>
                     </div>
                 </article>
                 
                 <article class="product-card">
-                    <img class="product-card__image" src="./img/products/gpu-rtx4070.jpg" alt="Видеокарта">
+                    <img class="product-card__image" src="./assets/img/rtx4070.jpeg" alt="Видеокарта">
                     <div class="product-card__content">
                         <h3 class="product-card__title">GeForce RTX 4070 Super 12GB</h3>
                         <p class="product-card__price">67 490 ₽</p>
                         <a class="product-card__button button" href="./pages/order.html">Купить</a>
+                        <a href="../pages/product.html" class="catalog-card__link">Подробнее</a>
                     </div>
                 </article>
             </div>
@@ -101,6 +104,17 @@
         </section>
 
     </main>
+
+    <dialog id="callback-modal" class="modal">
+        <div class="modal__content">
+            <h2 class="modal__title">Заказать обратный звонок</h2>
+            <p class="modal__text">Оставьте номер, и мы перезвоним.</p>
+            <form class="modal__form">
+                <input type="tel" class="modal__input" placeholder="Ваш телефон" required>
+                <button type="submit" class="modal__button button button--primary">Жду звонка</button>
+            </form>
+        </div>
+    </dialog>
 
     <footer class="site-footer">
         <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>

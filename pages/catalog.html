@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница с каталогом компании PcMarket">
     <link rel="stylesheet" href="../css/style.css">
     <title>Товары</title>
 </head>
@@ -28,7 +29,7 @@
                     <a href="aboutUs.html" class="site-nav__link">О нас</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="reviews.html" class="site-nav__link">Отзыв</a>
+                    <a href="reviews.html" class="site-nav__link">Отзывы</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="contacts.html" class="site-nav__link">Контакты</a>
@@ -38,42 +39,50 @@
     </header>
 
     <main>
-        <section>
-        <h1>Каталог товаров PcMarket</h1>
-        <p>Комплектующие и готовые конфигурации ПК с официальной гарантией качества.</p>
+        <section class="catalog-intro">
+            <h1 class="catalog-intro__title">Каталог товаров PcMarket</h1>
+            <p class="catalog-intro__description">Комплектующие и готовые конфигурации ПК с официальной гарантией качества.</p>
         </section>
         
-        <section>
-        <article>
-            <img src="../img/products/pc-ultra.jpg" alt="Игровой компьютер PcMarket Ultra">
-            <h2>Игровой ПК PcMarket Ultra</h2>
-            <p>
-            Мощный системный блок для игр в 4K и работы с 3D-графикой. Оснащён процессором Intel Core i7-14700KF, видеокартой GeForce RTX 4080 Super 16GB, 32 ГБ быстрой оперативной памяти DDR5 и скоростным накопителем NVMe SSD на 2 ТБ.
-            </p>
-            <p><strong>Гарантия:</strong> 3 года</p>
-            <p><strong>В наличии:</strong> Есть</p>
-            <p><strong>Цена:</strong> 219 990 ₽</p>
-            <a href="order.html">Купить</a>
-        </article>
+        <aside class="catalog-filters">
+            <h2 class="catalog-filters__title">Фильтры</h2>
+            <p class="catalog-filters__text">В разработке...</p>
+        </aside>
 
-        <hr>
+        <section class="catalog">
+            <article class="catalog-card">
+                <img src="../assets/img/gaming-pc.jpg" alt="Игровой компьютер PcMarket Ultra" class="catalog-card__image">
+                <h2 class="catalog-card__title">Игровой ПК PcMarket Ultra</h2>
+                <p class="catalog-card__description">
+                Мощный системный блок для игр в 4K и работы с 3D-графикой. Оснащён процессором Intel Core i7-14700KF, видеокартой GeForce RTX 4080 Super 16GB, 32 ГБ быстрой оперативной памяти DDR5 и скоростным накопителем NVMe SSD на 2 ТБ.
+                </p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Есть</p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 219 990 ₽</p>
+                <a href="order.html" class="catalog-card__link">Купить</a>
+                <a href="product.html" class="catalog-card__link">Подробнее</a>
+            </article>
 
-        <article>
-            <img src="../img/products/gpu-rtx4070.jpg" alt="Видеокарта GeForce RTX 4070 Super">
-            <h2>Видеокарта GeForce RTX 4070 Super 12GB</h2>
-            <p>
-            Высокопроизводительная видеокарта с поддержкой трассировки лучей и DLSS 3.5. Эффективная трёхвентиляторная система охлаждения, низкий уровень шума под нагрузкой и 12 ГБ видеопамяти стандарта GDDR6X для комфортного гейминга в 2K-разрешении.
-            </p>
-            <p><strong>Гарантия:</strong> 3 года</p>
-            <p><strong>В наличии:</strong> Осталось мало</p>
-            <p><strong>Цена:</strong> 67 490 ₽</p>
-            <a href="order.html">Купить</a>
-        </article>
+            <hr>
+
+            <article class="catalog-card">
+                <img src="../assets/img/rtx4070.jpeg" alt="Видеокарта GeForce RTX 4070 Super" class="catalog-card__image">
+                <h2 class="catalog-card__title">Видеокарта GeForce RTX 4070 Super 12GB</h2>
+                <p class="catalog-card__description"> 
+                Высокопроизводительная видеокарта с поддержкой трассировки лучей и DLSS 3.5. Эффективная трёхвентиляторная система охлаждения, низкий уровень шума под нагрузкой и 12 ГБ видеопамяти стандарта GDDR6X для комфортного гейминга в 2K-разрешении.
+                </p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Осталось мало</p>
+                <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 67 490 ₽</p>
+                <a href="order.html" class="catalog-card__link">Купить</a>
+                <a href="product.html" class="catalog-card__link">Подробнее</a>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 PcMarket. Все права защищены.</p>
-    </footer>    
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
+    </footer>
+
 </body>
 </html>

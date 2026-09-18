@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница с отзывами о компании PcMarket">
     <link rel="stylesheet" href="../css/style.css">
     <title>Отзывы</title>
 </head>
@@ -28,7 +29,7 @@
                     <a href="aboutUs.html" class="site-nav__link">О нас</a>
                 </li>
                 <li class="site-nav__item">
-                    <a href="reviews.html" class="site-nav__link">Отзыв</a>
+                    <a href="reviews.html" class="site-nav__link">Отзывы</a>
                 </li>
                 <li class="site-nav__item">
                     <a href="contacts.html" class="site-nav__link">Контакты</a>
@@ -39,35 +40,37 @@
 
     <main>
 
-        <h1>Отзывы покупателей</h1>
-        <p>Что говорят клиенты о сервисе и покупках в PcMarket</p>
-        <h2>4.9/5.0</h2>
-        <small>На основе 67 отзывов</small>
+        <section class="reviews-intro">
+            <h1 class="reviews-intro__title">Отзывы покупателей</h1>
+            <p class="reviews-intro__description">Что говорят клиенты о сервисе и покупках в PcMarket</p>
+            <h2 class="reviews-intro__mark">4.9/5.0</h2>
+            <small class="reviews-intro__count">На основе 67 отзывов</small>
+        </section>
 
-        <section>
+        <section class="reviews">
 
-            <article>
-                <div>
-                    <h2>Иван Петров 5.0/5.0</h2>
-                    <time datetime="2026-09-16">16 сентября 2026</time>
+            <article class="reviews-card">
+                <div class="reviews-card__content">
+                    <h2 class="reviews-card__name">Иван Петров 5.0/5.0</h2>
+                    <time datetime="2026-09-16" class="reviews-card__datetime">16 сентября 2026</time>
                 </div>
-                <span>Игровой ПК Pro i5 / RTX 4070</span>
-                <p>Заказывал готовую сборку. Привезли на следующий день, упаковано на совесть. Кабель-менеджмент внутри корпуса идеальный, всё аккуратно стянуто. В стресс-тестах температуры в норме, покупкой очень доволен!</p>
+                <span class="reviews-card__title">Игровой ПК Pro i5 / RTX 4070</span>
+                <p class="reviews-card__description">Заказывал готовую сборку. Привезли на следующий день, упаковано на совесть. Кабель-менеджмент внутри корпуса идеальный, всё аккуратно стянуто. В стресс-тестах температуры в норме, покупкой очень доволен!</p>
             </article>
 
-            <article>
-                <div>
-                    <h2>Сергей Петров 5.0/5.0</h2>
-                    <time datetime="2026-09-13">13 сентября 2026</time>
+            <article class="reviews-card">
+                <div class="reviews-card__content">
+                    <h2 class="reviews-card__name">Сергей Петров 5.0/5.0</h2>
+                    <time datetime="2026-09-13" class="reviews-card__datetime">13 сентября 2026</time>
                 </div>
-                <span>Монитор 27" QHD 165Hz</span>
-                <p>Отличный магазин! Консультант в чате помог определиться с матрицей монитора для работы с графикой. Битых пикселей при проверке в пункте выдачи не обнаружили. Рекомендую!</p>
+                <span class="reviews-card__title">Монитор 27" QHD 165Hz</span>
+                <p class="reviews-card__description">Отличный магазин! Консультант в чате помог определиться с матрицей монитора для работы с графикой. Битых пикселей при проверке в пункте выдачи не обнаружили. Рекомендую!</p>
             </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 PcMarket. Все права защищены.</p>
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
     </footer>
 
 </body>
