@@ -460,7 +460,7 @@ main,
 }
 
 .catalog-card__link:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 /* product */
@@ -569,7 +569,7 @@ main,
 }
 
 .specs-table__row:hover .specs-table__cell {
-  background-color: rgba(37, 36, 34, 0.03); 
+  background-color: rgb(37 36 34 / 3%); 
   color: var(--color-text);
   transition: all 0.2s ease;
 }
@@ -632,7 +632,7 @@ main,
 .order-form__input:focus {
   outline: none; 
   border-color: var(--color-primary); 
-  box-shadow: 0 0 0 3px rgba(235, 94, 40, 0.2); 
+  box-shadow: 0 0 0 3px rgb(235 94 40 / 20%); 
 }
 
 .order-form__input--textarea {
