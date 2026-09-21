@@ -45,35 +45,41 @@
             <p class="contacts-intro__description">Поможем подобрать комплектующие, проверить совместимость деталей, оформить заказ или рассчитать индивидуальную сборку ПК. Выберите удобный способ связи или приходите в наш шоурум.</p>
         </section>
 
-        <section class="contact-card">
-            <h2 class="contact-card__title">Карточки контактов</h2>
-            
-            <h3 class="contact-card__name">Отдел продаж и консультаций</h3>
-            <ul class="contact-card__list">
-                <li class="contact-card__item">+7 (800) 555-35-35 (бесплатно по РФ)</li>
-                <li class="contact-card__item">+7 (495) 123-45-67</li>
-                <li class="contact-card__item">Режим работы линии: ежедневно с 09:00 до 21:00</li>
-            </ul>
+        <section class="contacts-grid">
+            <div class="contact-card">
+                <h3 class="contact-card__name">Отдел продаж и консультаций</h3>
+                <ul class="contact-card__list">
+                    <li class="contact-card__item">+7 (800) 555-35-35 (бесплатно по РФ)</li>
+                    <li class="contact-card__item">+7 (495) 123-45-67</li>
+                    <li class="contact-card__item">Режим работы линии: ежедневно с 09:00 до 21:00</li>
+                </ul>
+            </div>
 
-            <h3 class="contact-card__name">Сервисный центр и техподдержка:</h3>
-            <ul class="contact-card__list">
-                <li class="contact-card__item">+7 (495) 123-45-68</li>
-                <li class="contact-card__item">Email: support@pcmarket.ru</li>
-                <li class="contact-card__item">Режим работы: Пн–Пт с 10:00 до 19:00</li>
-            </ul>
+            <div class="contact-card">
+                <h3 class="contact-card__name">Сервисный центр и техподдержка:</h3>
+                <ul class="contact-card__list">
+                    <li class="contact-card__item">+7 (495) 123-45-68</li>
+                    <li class="contact-card__item">Email: support@pcmarket.ru</li>
+                    <li class="contact-card__item">Режим работы: Пн–Пт с 10:00 до 19:00</li>
+                </ul>
+            </div>
 
-            <h3 class="contact-card__name">Электронная почта</h3>
-            <ul class="contact-card__list">
-                <li class="contact-card__item">По общим вопросам и заказам: info@pcmarket.ru</li>
-                <li class="contact-card__item">Для корпоративных клиентов: b2b@pcmarket.ru</li>
-            </ul>
+            <div class="contact-card">
+                <h3 class="contact-card__name">Электронная почта</h3>
+                <ul class="contact-card__list">
+                    <li class="contact-card__item">По общим вопросам и заказам: info@pcmarket.ru</li>
+                    <li class="contact-card__item">Для корпоративных клиентов: b2b@pcmarket.ru</li>
+                </ul>
+            </div>
 
-            <h3 class="contact-card__name">Мессенджеры и соцсети</h3>
-            <ul class="contact-card__list">
-                <li class="contact-card__item">Telegram: @pcmarket</li>
-                <li class="contact-card__item">Vkontakte: @pcmarket</li>
-                <li class="contact-card__item">WhatsApp: +7 (800) 555-35-35</li>
-            </ul>
+            <div class="contact-card">
+                <h3 class="contact-card__name">Мессенджеры и соцсети</h3>
+                <ul class="contact-card__list">
+                    <li class="contact-card__item">Telegram: @pcmarket</li>
+                    <li class="contact-card__item">Vkontakte: @pcmarket</li>
+                    <li class="contact-card__item">WhatsApp: +7 (800) 555-35-35</li>
+                </ul>
+            </div>    
         </section>
 
         <section class="feedback">
@@ -83,12 +89,12 @@
 
                 <div class="feedback-form__item">
                     <label for="user-name" class="feedback-form__label">Имя</label>
-                    <input type="text" id="user-name" placeholder="Ваше имя" name="name" cclass="feedback-form__input" required>
+                    <input type="text" id="user-name" placeholder="Ваше имя" name="name" class="feedback-form__input" required>
                 </div>
 
                 <div class="feedback-form__item">
                     <label for="user-contact" class="feedback-form__label">Телефон</label>
-                    <input type="text" name="contact" id="user-contact" placeholder="+7 (___) ___-__-__" cclass="feedback-form__input" required>
+                    <input type="text" name="contact" id="user-contact" placeholder="+7 (___) ___-__-__" class="feedback-form__input" required>
                 </div>
 
                 <div class="feedback-form__item">
@@ -106,7 +112,7 @@
                     <textarea name="user-message" id="user-message" rows="1" placeholder="Напишите ваш вопрос или прикрепите спецификацию..." class="feedback-form__textarea"></textarea>
                 </div>
 
-                <button type="submit" class="feedback-form__button">Отправить сообщение</button>
+                <button type="submit" class="button button--primary feedback-form__button">Отправить сообщение</button>
             </form>
         </section>
     </main>

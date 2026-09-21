@@ -1,4 +1,4 @@
-name: HTML Checker CI
+name: CI Checker
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  validate-html:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Скачивание кода репозитория
@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
 
-      - name: Проверка HTML-кода (HTMLHint)
-        run: npx htmlhint "**/*.html"
+      - name: Установка зависимостей
+        run: npm install
+
+      - name: Запуск линтеров (HTML и CSS)
+        run: npm run lint
