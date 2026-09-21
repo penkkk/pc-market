@@ -1,19 +1,20 @@
 @font-face {
-    font-family: 'Inter';
-    src: url(../assets/fonts/inter-v20-latin-regular.woff2);
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/space-grotesk-regular.woff2') format('woff2');
     font-weight: 400;
+    font-display: swap; 
 }
-
 @font-face {
-    font-family: 'Inter';
-    src: url(../assets/fonts/inter-v20-latin-500.woff2);
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/space-grotesk-medium.woff2') format('woff2');
     font-weight: 500;
+    font-display: swap;
 }
-
 @font-face {
-    font-family: 'Inter';
-    src: url(../assets/fonts/inter-v20-latin-700.woff2);
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/space-grotesk-bold.woff2') format('woff2');
     font-weight: 700;
+    font-display: swap;
 }
 
 :root {
@@ -23,6 +24,7 @@
   --charcoal-brown: #403d39ff;
   --carbon-black: #252422ff;
   --spicy-paprika: #eb5e28ff;
+  --burnt-paprika: #cc4514ff;
 
   --color-bg: var(--floral-white);          
   --color-bg-card: var(--floral-white);     
@@ -32,7 +34,7 @@
   --color-text-muted: var(--charcoal-brown); 
   
   --color-primary: var(--spicy-paprika);       
-  --color-primary-hover: var(--spicy-paprika); 
+  --color-primary-hover: var(--burnt-paprika); 
   
   --color-border: var(--dust-grey);      
   
