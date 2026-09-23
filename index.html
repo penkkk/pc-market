@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Главная страница магазина PcMarket">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
     <title>PcMarket</title>
 </head>
 
-<body>
 
-    <header class="site-header">
+<body id="body">
+
+    <header class="site-header" id="header">
         <a href="index.html" class="site-header__link">
             <h1 class="site-header__name"><span class="site-header__accent">PC</span>Market</h1>
         </a>
@@ -40,7 +42,7 @@
 
     <main>
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero__container">
                 <h1 class="hero__title">Ваш идеальный ПК начинается здесь</h1>
                 <p class="hero__description">
@@ -50,6 +52,7 @@
                     <a class="hero__button button button--primary" href="./pages/catalog.html">Перейти к товарам</a>
                     <a class="hero__button button button--secondary" href="./pages/services.html">Наши услуги</a>
                 </div>
+                <button type="button" class="button button--secondary button--call" id="open-modal-btn">Заказать звонок</button>
             </div>
         </section>
 
@@ -78,6 +81,7 @@
             <div class="popular__grid">
                 
                 <article class="product-card">
+                    <span class="catalog-card__badge">Хит</span>
                     <img class="product-card__image" src="./assets/img/gaming-pc.jpg" alt="Игровой ПК">
                     <div class="product-card__content">
                         <h3 class="product-card__title">Игровой ПК PcMarket Ultra</h3>
@@ -89,6 +93,7 @@
                 
                 <article class="product-card">
                     <img class="product-card__image" src="./assets/img/rtx4070.jpeg" alt="Видеокарта">
+                    <span class="catalog-card__badge">Хит</span>
                     <div class="product-card__content">
                         <h3 class="product-card__title">GeForce RTX 4070 Super 12GB</h3>
                         <p class="product-card__price">67 490 ₽</p>
@@ -111,9 +116,12 @@
             <form class="modal__form">
                 <input type="tel" class="modal__input" placeholder="Ваш телефон" required>
                 <button type="submit" class="modal__button button button--primary">Жду звонка</button>
+                <button type="button" class="button button--secondary" id="close-modal-btn">Закрыть</button>
             </form>
         </div>
     </dialog>
+
+    <a href="#body" class="button button-up">↑</a>
 
     <footer class="site-footer">
         <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
@@ -121,3 +129,4 @@
 
 </body>
 </html>
+
