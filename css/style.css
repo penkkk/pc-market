@@ -386,7 +386,6 @@ main,
 .modal {
   position: fixed;
   margin: auto;
-  border: none;
   box-shadow: var(--shadow-card);
   max-width: 400px;
   background-color: var(--color-bg-card);
@@ -396,7 +395,7 @@ main,
 }
 
 .modal::backdrop {
-    background-color: rgba(0, 0, 0, 70%);
+    background-color: rgba(0 0 0 / 70%);
 }
 
 .modal__input {
