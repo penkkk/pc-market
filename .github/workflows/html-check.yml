@@ -1,0 +1,25 @@
+name: CI Checker
+
+on:
+  push:
+    branches: [ "dev", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачивание кода репозитория
+        uses: actions/checkout@v4
+
+      - name: Установка Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Установка зависимостей
+        run: npm install
+
+      - name: Запуск линтеров (HTML и CSS)
+        run: npm run lint
